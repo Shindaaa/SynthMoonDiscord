@@ -1,12 +1,27 @@
 minecraft:
   server-settings:
+    advancement-done: true
+    join-quit-log: false;
     enabled: false #This setting allows the plugin to let the SynthMoon bot send messages sent to the server directly to the specified channel.
-    channelId: "xxx" #The channel ID where you want to receive messages from the server.
-    webHookLink: "xxx" #To receive the messages the plugin needs you to specify a link to a webhook that it can use to send the messages. (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+    channelId: "1022566688857792633"
+    webHookURL: "xxx" #To receive the messages the plugin needs you to specify a link to a webhook that it can use to send the messages. (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+    join-format: "[+] %player_name% s'est connecté"
+    quit-format: "[-] %player_name% s'est déconnecté"
+    advancement-format: "%player_name% vient de réaliser le progrès %advancement%"
+    join-avatarURL: "https://discordapp.com/channels/655074344619343873/706969544169881621/1023194997136306218"
+    quit-avatarURL: "https://discordapp.com/channels/655074344619343873/706969544169881621/1023194997136306218"
+    advancement-avatarURL: "https://discordapp.com/channels/655074344619343873/706969544169881621/1023194997136306218"
 
 discord:
+  bot-ownerId: "xxx"
   server-settings:
     enabled: false #Warning, users with nicknames with special characters will have squares instead of their nicknames. This plugin does not support special characters.
     format: "§b@Discord | %user_tag%: %discord_msg%" #The format you would like to have (%user_tag% -> Shinda#0002 | %user_name% -> Shinda)
   commands:
     enabled: false
+
+mysql:
+  hostname: "localhost"
+  username: "xxx"
+  database: "xxx"
+  password: "xxx"
