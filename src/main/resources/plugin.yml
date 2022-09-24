@@ -1,0 +1,7 @@
+name: SynthMoonDiscord
+version: '${project.version}'
+main: eu.shindapp.synthmoondiscord.SynthMoonDiscord
+api-version: 1.18
+prefix: SynthMoonDiscord
+authors: [ Shindapp ]
+description: Discord instance connected to SynthMoon Minecraft server for SynthMoon By Shindapp

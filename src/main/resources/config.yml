@@ -1,0 +1,12 @@
+minecraft:
+  server-settings:
+    enabled: false #This setting allows the plugin to let the SynthMoon bot send messages sent to the server directly to the specified channel.
+    channelId: "xxx" #The channel ID where you want to receive messages from the server.
+    webHookLink: "xxx" #To receive the messages the plugin needs you to specify a link to a webhook that it can use to send the messages. (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+
+discord:
+  server-settings:
+    enabled: false #Warning, users with nicknames with special characters will have squares instead of their nicknames. This plugin does not support special characters.
+    format: "§b@Discord | %user_tag%: %discord_msg%" #The format you would like to have (%user_tag% -> Shinda#0002 | %user_name% -> Shinda)
+  commands:
+    enabled: false
